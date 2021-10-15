@@ -557,7 +557,8 @@ color: #757575;
 .footer-container
 {
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+
 }
 .footer-address
 {
