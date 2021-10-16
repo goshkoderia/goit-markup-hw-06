@@ -24,7 +24,7 @@
                 <div class="header-contacts">
                         <div class="header-contacts-container">
                                 <a class="header-contact" href="mailto:ifo@devstudio.com">
-                                        <svg class="icon-email">
+                                        <svg class="icon-contact icon-email">
                                             <use  href="./images/sprite.svg#icon-email">
                                         </use>
                                     </svg>info@devstudio.com
@@ -32,7 +32,7 @@
                         </div>
                         <div class="header-contacts-container">
                                 <a class="header-contact" href="tel:+380961111111">
-                                    <svg class="icon-phone">
+                                    <svg class="icon-contact icon-phone">
                                         <use  href="./images/sprite.svg#icon-phone"></use>
                                     </svg>+38 096 111 11 11
                                 </a>
@@ -368,6 +368,8 @@
                 </div>
         </div>
     </footer>
+
+    <!-------------------------------------------- --------------------- MODALKA-----MODALKA ------------------------------------------------------>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
          <button class="btn-close" data-modal-close><svg class="btn-close-icon"><use href="./images/sprite.svg#icon-x"></use></svg></button>   
@@ -406,8 +408,14 @@
                         <textarea class="input textarea-coment" name="coment" id="user_coment" placeholder="Введите текст"></textarea>
                     </div>
                     <div class="form-checkbox">
-                        <input type="checkbox" class="input-checkbox" name="contract" id="user_contract">
-                        <label class="checkbox-label" for="user_contract">Соглашаюсь с рассылкой и принимаю<a class="checkbox-label-link" href="#">Условия договора</a></label>
+                        <input type="checkbox" class="input-checkbox  visualli-hidden" name="contract" id="user_contract">
+                        <label for="user_contract" class="checkbox-text">
+                            <span>
+                                <svg class="check-icon">
+                                    <use href="./images/sprite.svg#icon-galochkka-1"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю<a class="checkbox-label-link" href="#">Условия договора</a></label>
                     </div>
                     <button class="modal-button" type="submit">Отправить</button>                
                 </form>
